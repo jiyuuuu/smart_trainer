@@ -1,0 +1,22 @@
+.thumb{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: calc(100% - 30px);
+    padding: 100px 0 0 80px;
+}
+
+@media screen and (max-width:800px){
+    .thumb{
+        padding: 150px 0 0 65px;
+    }
+}
+@media screen and (max-width:400px){
+    .thumb{
+        padding: 150px 0 0 0;
+    }
+}

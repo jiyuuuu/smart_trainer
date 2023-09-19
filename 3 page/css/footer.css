@@ -1,0 +1,23 @@
+.footer__text{
+    margin: 120px 0 0 200px;
+    padding: 25px 65px 25px 30px;    
+    display: flex;
+    justify-content: space-between;
+    color: #343434;
+}
+@media (max-width: 800px) {
+    .footer__text{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 400px){
+    .footer__text{
+        margin: 20px;
+        padding: 0;
+    }
+    .footer__text{
+        font-size: 12px;
+        color: #343434;
+    }
+}
