@@ -127,13 +127,9 @@
     box-shadow: 3px 3px 7px 2px #FFEBEB;
 }
 .section__bottom__wrapper{
-    border: 1px #000;
-    width: 1100px;
-    margin: 50px 0 0 0;
-}
-.section__bottom__start{
     border: none;
-    padding: 25px 25px 25px 30px; 
+    height: 400px;
+    margin: 50px 0 0 0;
 }
 .section__bottom__title{
     border: none;
@@ -142,15 +138,9 @@
     font-size: 20px;
     color: #343434;
 }
-.section__bottom__wrapper{
-    border: none;
-    height: 400px;
-}
 .section__bottom__form{
     border: 1px solid #e2e2e2;
     border-radius: 10px;
-    width: 1200px;
-    height: 350px;
     margin: 10px 30px 30px 30px;
 }
 .section__bottom__start{
@@ -182,9 +172,10 @@
 }
 .section__bottom-buttons{
     border: none;
-    padding: 10px;
+    padding: 10px 0 10px 0;
     display: flex;
     justify-content: flex-end;
+    white-space: nowrap;
 }
 .bottom--button1{
     margin-right: 5px;
@@ -202,13 +193,14 @@
     color: #343434;
 }
 table{
+    width: 90%;
     border-collapse: collapse;
-    width: 1100px;
-    margin: 1rem auto;
+    margin: 20px 35px 20px 35px;
     border: none;
     background-color: white;
     text-align: center;
     border-radius: 10px;
+    color: #343434;
   }
   
   /* 테이블 행 */
@@ -217,8 +209,8 @@ table{
     text-align: left;
     border-bottom: 1px solid #ddd;
     text-align: center;
+    color: #343434;
   }
-  
   th {
     background-color: #ffffff;
     color: #343434;
@@ -276,17 +268,14 @@ table{
     font-size: 18px;
     font-weight: bold;
     margin: 10px;
-    text-align: center;
-    display: block;
-    justify-content: center;
-    position: absolute;
+    white-space: nowrap;
 }
 .section__bottom-copy:hover{
     background-color: #e50000;
 }
 .bottom--copy{
-    height: 100px;
     width: 100%;
+    padding-bottom: 20px;
     display: flex;
     justify-content: center;
 }
@@ -299,9 +288,30 @@ table{
     .section__top__start{
         padding-right: 20px;
     }
+    .section__bottom__icon{
+        font-size: 0.9rem;
+    }
+    .section__bottom-member{
+        font-size: 16px;
+    }
+    .section__bottom-info{
+        font-size: 16px;
+    }
     .content__add{
         width: 100px;
         margin-right: 10px;
+    }
+    th{
+        font-size: 14px;
+    }
+    tr{
+        font-size: 14px;
+    }
+    .bottom--button1{
+        font-size: 12px;
+    }
+    .bottom--button2{
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 400px){
@@ -332,7 +342,7 @@ table{
         font-weight: bold;
     }
     .section__bottom__start{
-        padding: 20px 25px 25px 20px;
+        padding: 15px;
         display: flex;
         justify-content: flex-start;
         align-items: baseline;
@@ -344,20 +354,17 @@ table{
         align-items: baseline;
         color: #343434;
     }
-    .bottom--button{
-        border: none;
-    }
     .section__bottom__icon{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
     .section__bottom-member{
-        font-size: 15px;
+        font-size: 12px;
+        white-space: nowrap;
     }
     .section__bottom-info{
-        font-size: 15px;
-    }
-    .section__bottom-buttons{
-        text-align: end;
+        font-size: 12px;
+        padding-left: 5px;
+        white-space: nowrap;
     }
     .section__bottom__form{
         width: 330px;
@@ -376,5 +383,27 @@ table{
     }
     .section__bottom-add-all{
         padding-top: 50px;
+    }
+    .section__bottom-buttons{
+        padding-left: 15px;
+    }
+    .bottom--button1{
+        font-size: 10px;
+    }
+    .bottom--button2{
+        font-size: 10px;
+    }
+    table{
+        margin: 0 15px 15px 15px;
+    }
+    th{
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    tr{
+        font-size: 11px;
+    }
+    .section__bottom-copy{
+        font-size: 15px;
     }
 }

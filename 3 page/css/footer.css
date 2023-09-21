@@ -1,14 +1,15 @@
 .footer__text{
     margin: 120px 0 0 200px;
-    padding: 25px 65px 25px 30px;    
+    padding: 25px 30px 25px 30px;    
     display: flex;
     justify-content: space-between;
     color: #343434;
 }
 @media (max-width: 800px) {
     .footer__text{
-        display: flex;
-        justify-content: space-between;
+        margin: 100px 0 0 50px;
+        padding: 25px 30px 25px 30px;
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 400px){
@@ -18,5 +19,6 @@
     }
     .footer__text{
         font-size: 12px;
+        padding-right: 0;
     }
 }
