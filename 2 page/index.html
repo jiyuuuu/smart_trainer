@@ -8,21 +8,10 @@
     <link rel="stylesheet" href="./css/navigation.css">
     <link rel="stylesheet" href="./css/section.css">
     <link rel="stylesheet" href="./css/footer.css">
-
-    <script>
-        const modalOpenButton = document.getElementById('modalOpenButton');
-        const modalCloseButton = document.getElementById('modalCloseButton');
-        const modal = document.getElementById('modalContainer');
-
-        modalOpenButton.addEventListener('click', () => {
-        modal.classList.remove('hidden');
-        });
-
-        modalCloseButton.addEventListener('click', () => {
-        modal.classList.add('hidden');
-        });
-    </script>
+    <link rel="stylesheet" href="../modal1/index.css">
+    <link rel="stylesheet" href="../modal2/index.css">
 </head>
+
 <body>
     <header class="header">
         <div class="header__wrapper">
@@ -59,7 +48,8 @@
             </li>
         </ul>
     </nav>
-    <section class="section">
+    <section class="section" style="border: none; margin-left: 200px;
+    margin-top: 80px;">
         <div class="section__top__wrapper">
             <div class="section__top__start">
                 <h1 class="section__top__title">회원관리</h1>
@@ -67,18 +57,12 @@
             </div>
         <div class="wrap-vertical">
             <div class="container">
-                <div class="content__add">
+                <div class="content__add" id="member_modalOpenButton">
                     <div class="content__add-all">
-                    <button id="modalOpenButton" class="content__add-icon"><ion-icon name="add-outline"></ion-icon></button>
+                    <button class="content__add-icon"><ion-icon name="add-outline"></ion-icon></button>
                     <div class="content__add-text">회원추가</div>
                     </div>
                 </div>
-                <div id="modalContainer" class="hidden">
-                    <div id="modalContent">
-                      <p>모달 창</p>
-                      <button id="modalCloseButton">닫기</button>
-                    </div>
-                  </div>
 
                 <div class="content__member">
                     <div class="content__member__start">
@@ -212,20 +196,243 @@
                     <div class="section__bottom-info"> (여) 165cm / 50kg </div>
                 </div>
                 <div class="section__bottom-add-all">
-                    <button class="section__bottom-add">운동추가</button>
+                    <button class="section__bottom-add" id="modalOpenButton">운동추가</button>
                     <div class="section__bottom__text">회원님의 운동현황을 기록해주세요!</div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer__wrapper">
+    
+        <footer class="footer__wrapper">
         <div class="footer__text">
         <div>문의 : 010-7508-1440</div>
         <div>All rights reserved.</div>
         </div>
-    </footer>
+        </footer>
+
+    <!-- 회원추가 모달 시작 -->
+        <div class="member hidden" id="member_modalContainer">
+            <h3>회원추가</h3>
+            <div class="section">
+                <div class="info">
+                    <div class="user-name"><div class="field-title">이름</div>
+                    <span><input type="text" class="input__user-name"></span></div>
+    
+                    <div class="user-gender"><div class="field-title">성별</div>
+                    <select class="field-gender">
+                        <option value="">선택</option>
+                        <option value="">여성</option>
+                        <option value="">남성</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="field-title">전화번호</div>
+                <span><input type="text" class="input__basic"></span>
+                <div class="field-title">남은 수강권</div>
+                <span><input type="number" class="input__basic"></span>
+                <div class="info">
+                    <div class="user-height">
+                        <div class="field-title">키</div>
+                        <span><input type="text" class="input__height"></span>
+                    </div>
+                    <div class="user-weight">
+                        <div class="field-title">체중</div>
+                        <span><input type="text" class="input__weight"></span>
+                    </div>
+                </div>
+                <div class="field-title">보유 회원권</div>
+                <span><input type="text" class="input__basic"></span>
+                <div class="field-title">잔여일</div>
+                <span><input type="text" class="input__basic"></span>
+                <div class="field-title">메모</div>
+                <span><input type="text" class="input__memo"></span>         
+            </div>
+            <div class="button">
+                <button class="button-save">저장</button>
+                <button class="button-close" id="member_modalCloseButton">취소</button>
+            </div>
+        </div>
+    <!-- 회원추가 모달 끝 -->
+
+    <!-- 운동추가 모달 시작 -->
+    <section id="modalContainer" class="hidden">
+        <div class="section__wrapper">
+        <div class="section__header">
+            <h2 class="title">운동현황</h2>
+            <div class="member_name">고망고 회원님</div>
+            <div class="member_info">(여) 165cm / 50kg</div>
+        </div>
+        <div class="section__body">
+            <div class="body__title">
+                <h4 class="title_workout-name">운동이름</h4>
+                <h4 class="title_all">구분</h4>
+                <h4 class="title_all">세트</h4>
+                <h4 class="title_all">갯수</h4>
+                <h4 class="title_all">무게</h4>
+            </div>
+            <div class="input_box">
+                <div class="input">
+                    <input type="text" class="workout_name">
+                    <select class="workout_select">
+                        <option value=""></option>
+                        <option value="">상체</option>
+                        <option value="">하체</option>
+                        <option value="">전신</option>
+                    </select>
+                    <input type="text" class="workout_sets">
+                    <input type="text" class="workout_reps">
+                    <input type="text" class="workout_weight">
+                </div>
+                <div class="input">
+                    <input type="text" class="workout_name">
+                    <select class="workout_select">
+                        <option value=""></option>
+                        <option value="">상체</option>
+                        <option value="">하체</option>
+                        <option value="">전신</option>
+                    </select>
+                    <input type="text" class="workout_sets">
+                    <input type="text" class="workout_reps">
+                    <input type="text" class="workout_weight">
+                </div>
+                <div class="input">
+                    <input type="text" class="workout_name">
+                    <select class="workout_select">
+                        <option value=""></option>
+                        <option value="">상체</option>
+                        <option value="">하체</option>
+                        <option value="">전신</option>
+                    </select>
+                    <input type="text" class="workout_sets">
+                    <input type="text" class="workout_reps">
+                    <input type="text" class="workout_weight">
+                </div>
+                <div class="input">
+                    <input type="text" class="workout_name">
+                    <select class="workout_select">
+                        <option value=""></option>
+                        <option value="">상체</option>
+                        <option value="">하체</option>
+                        <option value="">전신</option>
+                    </select>
+                    <input type="text" class="workout_sets">
+                    <input type="text" class="workout_reps">
+                    <input type="text" class="workout_weight">
+                </div>
+                <div class="input">
+                    <input type="text" class="workout_name">
+                    <select class="workout_select">
+                        <option value=""></option>
+                        <option value="">상체</option>
+                        <option value="">하체</option>
+                        <option value="">전신</option>
+                    </select>
+                    <input type="text" class="workout_sets">
+                    <input type="text" class="workout_reps">
+                    <input type="text" class="workout_weight">
+                </div>
+                <div class="input">
+                    <input type="text" class="workout_name">
+                    <select class="workout_select">
+                        <option value=""></option>
+                        <option value="">상체</option>
+                        <option value="">하체</option>
+                        <option value="">전신</option>
+                    </select>
+                    <input type="text" class="workout_sets">
+                    <input type="text" class="workout_reps">
+                    <input type="text" class="workout_weight">
+                </div>
+                <div class="input">
+                    <input type="text" class="workout_name">
+                    <select class="workout_select">
+                        <option value=""></option>
+                        <option value="">상체</option>
+                        <option value="">하체</option>
+                        <option value="">전신</option>
+                    </select>
+                    <input type="text" class="workout_sets">
+                    <input type="text" class="workout_reps">
+                    <input type="text" class="workout_weight">
+                </div>
+                <div class="input">
+                    <input type="text" class="workout_name">
+                    <select class="workout_select">
+                        <option value=""></option>
+                        <option value="">상체</option>
+                        <option value="">하체</option>
+                        <option value="">전신</option>
+                    </select>
+                    <input type="text" class="workout_sets">
+                    <input type="text" class="workout_reps">
+                    <input type="text" class="workout_weight">
+                </div>
+                <div class="input">
+                    <input type="text" class="workout_name">
+                    <select class="workout_select">
+                        <option value=""></option>
+                        <option value="">상체</option>
+                        <option value="">하체</option>
+                        <option value="">전신</option>
+                    </select>
+                    <input type="text" class="workout_sets">
+                    <input type="text" class="workout_reps">
+                    <input type="text" class="workout_weight">
+                </div>
+                <div class="input">
+                    <input type="text" class="workout_name">
+                    <select class="workout_select">
+                        <option value=""></option>
+                        <option value="">상체</option>
+                        <option value="">하체</option>
+                        <option value="">전신</option>
+                    </select>
+                    <input type="text" class="workout_sets">
+                    <input type="text" class="workout_reps">
+                    <input type="text" class="workout_weight">
+                </div>
+            </div>
+
+            <div class="wrapper_button-add">
+                <input type="button" value="추가" class="button_add">
+            </div>
+            <div class="button">
+                <button class="button-save">저장</button>
+                <button class="button-close" id="modalCloseButton">취소</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- 운동추가 모달 끝 -->
+
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        const modalOpenButton = document.getElementById('modalOpenButton');
+        const modalCloseButton = document.getElementById('modalCloseButton');
+        const modal = document.getElementById('modalContainer');
+
+        modalOpenButton.addEventListener('click', () => {
+            modal.classList.remove('hidden');
+        });
+
+        modalCloseButton.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+
+        const member_modalOpenButton = document.getElementById('member_modalOpenButton');
+        const member_modalCloseButton = document.getElementById('member_modalCloseButton');
+        const member_modal = document.getElementById('member_modalContainer');
+
+        member_modalOpenButton.addEventListener('click', () => {
+            member_modal.classList.remove('hidden');
+        });
+
+        member_modalCloseButton.addEventListener('click', () => {
+            member_modal.classList.add('hidden');
+        });
+    </script>
+
     </body>
 </html>

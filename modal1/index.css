@@ -12,6 +12,7 @@
     left: 25vw;
     overflow-y: auto;
     height: 93vh;
+    background-color: #fff;
 }
 h3{
     font-size: 22px;

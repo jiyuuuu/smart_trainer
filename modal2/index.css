@@ -1,6 +1,7 @@
-section{
-    border: none;
+.section__wrapper{
+    border: none; 
     box-shadow: 3px 3px 10px 2px #a9a9a9;
+    background-color: #fff;
     border-radius: 20px;
     width: 90vw;
     position: fixed;
