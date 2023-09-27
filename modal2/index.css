@@ -1,0 +1,238 @@
+section{
+    border: none;
+    box-shadow: 3px 3px 10px 2px #a9a9a9;
+    border-radius: 20px;
+    width: 90vw;
+    position: fixed;
+    top: 35px;
+    left: 35px;
+    overflow-x: hidden;
+    height: 90vh;
+    overflow-y: auto;
+    padding-bottom: 30px;
+}
+.section__header{
+    display: flex;
+    align-items: baseline;
+    margin: 30px 0 30px 70px;
+}
+.section__body{
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    border: none;
+    font-size: 22px;
+    color: #343434;
+}
+.title_workout-name{
+    width: 200px;
+    text-align: center;
+}
+.title_all{
+    width: 80px;
+    text-align: center;
+}
+.member_name{
+    margin: 0 5px 0 20px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #343434;
+}
+.member_info{
+    font-size: 17px;
+    margin-left: 0;
+    color: #767676;
+}
+.body__title{
+    display: flex;
+    justify-content: space-between;
+    /* width: 200px; */
+    color: #343434;
+    width: 80%;
+}
+.input_box{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.workout_name{
+    width: 200px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    margin-bottom: 20px;
+}
+.workout_select{
+    width: 80px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    margin-bottom: 20px;
+}
+.workout_sets{
+    width: 80px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    margin-bottom: 20px;
+}
+.workout_reps{
+    width: 80px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    margin-bottom: 20px;
+}
+.workout_weight{
+    width: 80px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    margin-bottom: 20px;
+}
+.wrapper_button-add{
+    width: 80%;
+}
+.button_add{
+    justify-content: center;
+    margin: 10px 0 20px 0;
+    border: 1px dashed #c4c4c4;
+    background-color: #fff;
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px 50px 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.button_add:hover{
+    border: 1px dashed #ff0000;
+    color: #ff0000;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.button-save{
+    border: none;
+    border-radius: 50px;
+    background-color: #ff0000;
+    font-weight: bold;
+    color: #fff;
+    width: 170px;
+    height: 45px;
+    padding: 10px 50px 10px 50px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.button-close{
+    border: none;
+    border-radius: 50px;
+    padding: 10px 50px 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 170px;
+    height: 45px;
+}
+
+@media screen and (max-width: 800px){
+    .title_workout-name{
+        width: 195px;
+    }
+    .title_all{
+        width: 65px;
+    }
+    .workout_name{
+        width: 195px;
+    }
+    .workout_select{   
+        width: 65px;
+    }
+    .workout_sets{
+        width: 65px;
+    }
+    .workout_reps{
+        width: 65px;
+    }
+    .workout_weight{
+        width: 65px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .section__header{
+        margin: 40px 25px 30px 25px;
+        white-space: nowrap;
+    }
+    .title{
+        margin: 0;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+    .member_name{
+        font-size: 14px;
+        margin-left: 10px;
+        white-space: nowrap
+    }
+    .member_info{
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    .section__body{
+        width: 90vw;
+    }
+    .body__title{
+        width: 90%;
+    }
+    .title_workout-name{
+        width: 170px;
+        font-size: 14px;
+    }
+    .title_all{
+        width: 65px;
+        font-size: 14px;
+    }
+    .input_box{
+        width: 90%;
+    }
+    .workout_name{
+        width: 120px;
+        height: 25px;
+    }
+    .workout_select{   
+        width: 50px;
+        height: 29px;
+    }
+    .workout_sets{
+        width: 40px;
+        height: 25px;
+    }
+    .workout_reps{
+        width: 40px;
+        height: 25px;
+    }
+    .workout_weight{
+        width: 40px;
+        height: 25px;
+    }
+    .wrapper_button-add {
+        width: 90%;
+    }
+    .button-save{
+        width: 155px;
+        height: 40px;
+    }
+    .button-close{
+        width: 155px;
+        height: 40px;
+    }
+}

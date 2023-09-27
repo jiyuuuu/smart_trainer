@@ -1,0 +1,112 @@
+
+.member{
+    width: 515px;
+    margin: auto; /*중앙 정렬*/
+    padding: 0 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px 2px #a9a9a9;
+    position: fixed;
+    top: 3vw;
+    left: 25vw;
+    overflow-y: auto;
+    height: 93vh;
+}
+h3{
+    font-size: 22px;
+    color: #343434;
+    margin: 50px 70px 30px 70px;
+}
+.section{
+    margin: 0 70px 30px 70px;
+}
+.field-title{
+    margin: 15px 0 5px 0;
+    font-size: 15px;
+    color: #343434;
+    font-weight: bold;
+    flex-direction: column;
+}
+.user-name .user-gender .user-height .user-weight{
+    flex-direction: column;
+}
+.info{
+    display: flex;
+}
+.input__user-name{
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+    width: 210px;
+    height: 25px;
+    outline: none;
+    margin-right: 10px;
+}
+.field-gender{
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+    width: 130px;
+    height: 30px;
+    outline: none;
+}
+.input__basic{
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+    width: 350px;
+    height: 25px;
+    outline: none;
+}
+.input__height{
+    border: 1px solid #c3c3c3;
+    margin-right: 10px;
+    border-radius: 3px;
+    width: 170px;
+    height: 25px;
+    outline: none;
+}
+.input__weight{
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    width: 165px;
+    height: 25px;
+    outline: none;
+}
+.input__memo{
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    width: 350px;
+    height: 150px;
+    outline: none;   
+}
+.button{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+}
+.button-save{
+    border: none;
+    border-radius: 50px;
+    width: 170px;
+    height: 45px;
+    background-color: #ff0000;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 50px 10px 50px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.button-close{
+    border: none;
+    border-radius: 50px;
+    width: 170px;
+    height: 45px;
+    padding: 10px 50px 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+@media screen and (max-width: 400px) {
+    .member{
+        padding: 0 5px 0 5px;
+        margin-bottom: 20px;
+    }
+}
