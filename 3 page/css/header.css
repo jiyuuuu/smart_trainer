@@ -25,12 +25,18 @@
     margin-left: 5px;
     font-size: 1.5rem;
 }
+.header__hamburger:hover{
+    cursor: pointer;
+}
 .header__logo{
     font-size: 1.3rem;
     font-weight: bold;
     margin-left: 0;
     /*글자 정렬 고정*/
     white-space: nowrap;
+}
+.header__logo:hover{
+    cursor: pointer;
 }
 .header__logo-color{
     font-size: 1.3rem;
@@ -62,6 +68,10 @@
 .search-icon{
     position: relative;
     display: none;
+    color: #343434;
+}
+.search-icon:hover{
+    cursor: pointer;
 }
 .header__input--button{
     background-color: #ff0000;
@@ -82,7 +92,7 @@
     padding: 5px 0 0 0;
 }
 .header__icon{
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #343434;
 }
 .header__profile{
@@ -104,5 +114,17 @@
     }
     .header__start{
         text-align: center;
+    }
+    .search-icon{
+        display: block;
+        font-size: 1.4rem;
+        margin-right: 5px;
+    }
+    .header__hamburger{
+        display: block;
+    }
+    .header__wrapper{
+        padding: 0 15px 0 15px;
+        align-items: center;
     }
 }

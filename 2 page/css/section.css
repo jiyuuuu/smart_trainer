@@ -260,6 +260,9 @@
     .wrap-vertical{
         margin-left: 15px;
     }
+    .section__bottom__wrapper{
+        margin-top: 20px;
+    }
     .section__bottom__title{
         padding: 10px 10px 15px 20px;
         font-size: 18px;
